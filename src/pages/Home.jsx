@@ -184,11 +184,11 @@ const Home = () => {
         >
           <TableHead sx={{ backgroundColor: '#f9fafb' }}>
             <TableRow>
-              <TableCell sx={{fontWeight:"bold",fontSize:"18px"}}>#</TableCell>
-              <TableCell sx={{fontWeight:"bold",fontSize:"18px"}}>Quiz</TableCell>
-              <TableCell sx={{fontWeight:"bold",fontSize:"18px"}}>Questions</TableCell>
-              <TableCell sx={{fontWeight:"bold",fontSize:"18px"}}>Created At</TableCell>
-              <TableCell sx={{fontWeight:"bold",fontSize:"18px"}}>Actions</TableCell>
+              <TableCell sx={{fontWeight:"bold",fontSize:"16px"}}>#</TableCell>
+              <TableCell sx={{fontWeight:"bold",fontSize:"16px"}}>Quiz</TableCell>
+              <TableCell sx={{fontWeight:"bold",fontSize:"16px"}}>Questions</TableCell>
+              <TableCell sx={{fontWeight:"bold",fontSize:"16px"}}>Created At</TableCell>
+              <TableCell sx={{fontWeight:"bold",fontSize:"16px"}}>Actions</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
