@@ -72,7 +72,7 @@ const Register = () => {
     if (!validate()) return;
 
     try {
-      await axios.post('https://quizzy-backend-7tnf.onrender.com//api/register', form);
+      await axios.post('https://quizzy-backend-7tnf.onrender.com/api/register', form);
       setSnackbar({ open: true, message: 'Registration successful! Redirecting to login...', severity: 'success' });
 
       setTimeout(() => navigate('/login'), 2000);

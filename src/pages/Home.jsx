@@ -38,7 +38,7 @@ const Home = () => {
 
   const fetchQuizzes = async () => {
     try {
-      const res = await axios.get('https://quizzy-backend-7tnf.onrender.com//api/quizzes', {
+      const res = await axios.get('https://quizzy-backend-7tnf.onrender.com/api/quizzes', {
         headers: {
           Authorization: `Bearer ${token}`,
         },

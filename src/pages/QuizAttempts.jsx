@@ -34,7 +34,7 @@ const QuizAttempts = () => {
   const fetchAttempts = async () => {
     try {
       const res = await axios.get(
-        `https://quizzy-backend-7tnf.onrender.com//api/attempts/${quizId}/attempts`,
+        `https://quizzy-backend-7tnf.onrender.com/api/attempts/${quizId}/attempts`,
         {
           headers: { Authorization: `Bearer ${token}` }
         }
