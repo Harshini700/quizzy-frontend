@@ -59,7 +59,7 @@ const Login = () => {
     if (Object.values(errors).some((err) => err)) return;
 
     try {
-      const res = await axios.post('http://localhost:5000/api/login', form);
+      const res = await axios.post('https://quizzy-backend-7tnf.onrender.com//api/login', form);
       if (res?.data?.token) {
         localStorage.setItem('token', res.data.token);
         localStorage.setItem('user', JSON.stringify(res.data.user));

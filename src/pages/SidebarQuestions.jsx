@@ -29,7 +29,7 @@ const SidebarQuestions = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/questions/user', {
+        const res = await axios.get('https://quizzy-backend-7tnf.onrender.com//api/questions/user', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setQuestions(res.data);

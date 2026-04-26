@@ -34,7 +34,7 @@ const QuizAttempts = () => {
   const fetchAttempts = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/attempts/${quizId}/attempts`,
+        `https://quizzy-backend-7tnf.onrender.com//api/attempts/${quizId}/attempts`,
         {
           headers: { Authorization: `Bearer ${token}` }
         }
@@ -54,7 +54,7 @@ const QuizAttempts = () => {
     if (window.confirm('Are you sure you want to delete this attempt?')) {
       try {
         await axios.delete(
-          `http://localhost:5000/api/attempts/${quizId}/attempts/${id}`,
+          `https://quizzy-backend-7tnf.onrender.com//api/attempts/${quizId}/attempts/${id}`,
           {
             headers: { Authorization: `Bearer ${token}` }
           }

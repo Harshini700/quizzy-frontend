@@ -38,7 +38,7 @@ const Home = () => {
 
   const fetchQuizzes = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/quizzes', {
+      const res = await axios.get('https://quizzy-backend-7tnf.onrender.com//api/quizzes', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -66,14 +66,14 @@ const Home = () => {
 
       if (editMode && editId) {
         res = await axios.put(
-          `http://localhost:5000/api/quizzes/${editId}`,
+          `https://quizzy-backend-7tnf.onrender.com//api/quizzes/${editId}`,
           { title: quizTitle, questions },
           config
         );
         newQuizId = editId;
       } else {
         res = await axios.post(
-          'http://localhost:5000/api/quizzes',
+          'https://quizzy-backend-7tnf.onrender.com//api/quizzes',
           { title: quizTitle, questions },
           config
         );
@@ -112,7 +112,7 @@ const Home = () => {
 
   // const handleDelete = async (id) => {
   //   try {
-  //     await axios.delete(`http://localhost:5000/api/quizzes/${id}`, {
+  //     await axios.delete(`https://quizzy-backend-7tnf.onrender.com//api/quizzes/${id}`, {
   //       headers: {
   //         Authorization: `Bearer ${token}`,
   //       },

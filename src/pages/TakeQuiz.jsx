@@ -23,7 +23,7 @@ const TakeQuiz = () => {
 
   const fetchQuizData = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/quizzes/${quizId}`, {
+      const res = await axios.get(`https://quizzy-backend-7tnf.onrender.com//api/quizzes/${quizId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setQuiz(res.data);
@@ -100,7 +100,7 @@ const TakeQuiz = () => {
     setSubmitted(true);
 
     try {
-      await axios.post(`http://localhost:5000/api/attempts/${quizId}/submit`, {
+      await axios.post(`https://quizzy-backend-7tnf.onrender.com//api/attempts/${quizId}/submit`, {
         userId: user?._id,
         answers,
         name: user?.name,
