@@ -17,7 +17,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import ProtectedRoute from './components/ProtectedRoute';
-import SidebarQuestions from './pages/sidebarQuestions';
+import SidebarQuestions from './pages/SidebarQuestions';
 
 
 import './App.css';
