@@ -69,7 +69,7 @@ const Dashboard = () => {
 
   const fetchUserSummary = async () => {
     try {
-      const res = await axios.get('https://quizzy-backend-7tnf.onrender.com//api/analytics/summary/user', {
+      const res = await axios.get('https://quizzy-backend-7tnf.onrender.com/api/analytics/summary/user', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setData(res.data);
